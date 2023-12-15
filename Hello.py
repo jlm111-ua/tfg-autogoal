@@ -20,18 +20,25 @@ LOGGER = get_logger(__name__)
 
 def run():
     st.set_page_config(
-        page_title="Hello",
+        page_title="AutoGOAL",
         page_icon="👋",
     )
 
-    st.write("# Welcome to Streamlit! 👋")
+    st.write("# :balloon: Welcome to AutoGOAL! 👋")
 
     st.sidebar.success("Select a demo above.")
 
     st.markdown(
         """
-        Streamlit is an open-source app framework built specifically for
-        Machine Learning and Data Science projects.
+        AutoGOAL is a Python library for automatically finding the best way to solve a given task. 
+        It has been designed mainly for Automated Machine Learning (aka AutoML) but it can be used 
+        in any scenario where you have several possible ways to solve a given task.
+
+        Technically speaking, AutoGOAL is a framework for program synthesis, i.e., 
+        finding the best program to solve a given problem, provided that the user can describe the space of all possible programs. 
+        AutoGOAL provides a set of low-level components to define different spaces and efficiently search in them. 
+        In the specific context of machine learning, AutoGOAL also provides high-level components that can be used as a black-box in almost any type of problem and dataset format.
+        
         **👈 Select a demo from the sidebar** to see some examples
         of what Streamlit can do!
         ### Want to learn more?
